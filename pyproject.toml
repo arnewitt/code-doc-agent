@@ -1,0 +1,13 @@
+[project]
+name = "code_doc_agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.141.0",
+    "crewai-tools>=0.51.1",
+    "langchain-nvidia-ai-endpoints>=0.3.11",
+    "nest-asyncio>=1.6.0",
+    "tqdm>=4.67.1",
+]
