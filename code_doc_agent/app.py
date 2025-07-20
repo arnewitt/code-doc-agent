@@ -1,14 +1,12 @@
 import os
 from agent.documentation_workflow import DocumentationFlow
-from utils import DocumentationState
 
 
 class Application:
 
-    def __init__(self, project_url: str):
-        """Initialize the application with the repository URL."""
-        state = DocumentationState(project_url=project_url)
-        self.flow = DocumentationFlow(state=state)
+    def __init__(self):
+        """Initialize the application."""
+        self.flow = DocumentationFlow()
 
     def _run_documentation(self):
         """Start the actual code documentation process."""
@@ -29,5 +27,3 @@ class Application:
         """Run the documentation workflow."""
         self._run_documentation()
         self._create_overview_md()
-
-    # todo: implement gui

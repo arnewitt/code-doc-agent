@@ -25,6 +25,6 @@ class DocumentationState(BaseModel):
     State for the documentation flow
     """
 
-    project_url: str = "https://github.com/arnewitt/text-pii-masking"
+    project_url: str = input("Enter project URL: ")
     repo_path: Path = "./workdir"
     docs: List[str] = []
